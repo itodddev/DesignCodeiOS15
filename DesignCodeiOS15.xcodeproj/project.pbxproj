@@ -16,6 +16,7 @@
 		508E61EB289E9675001AC2EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508E61EA289E9675001AC2EF /* ContentView.swift */; };
 		508E61ED289E9676001AC2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508E61EC289E9676001AC2EF /* Assets.xcassets */; };
 		508E61F0289E9676001AC2EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508E61EF289E9676001AC2EF /* Preview Assets.xcassets */; };
+		50A5963628A1A7210071E5B2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A5963528A1A7210071E5B2 /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		508E61EA289E9675001AC2EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		508E61EC289E9676001AC2EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		508E61EF289E9676001AC2EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50A5963528A1A7210071E5B2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				508E61E8289E9675001AC2EF /* DesignCodeiOS15App.swift */,
 				508E61EA289E9675001AC2EF /* ContentView.swift */,
 				506B3B5228A171B6002D0DEA /* TabBar.swift */,
+				50A5963528A1A7210071E5B2 /* Tab.swift */,
 				506B3B4C289FE2C5002D0DEA /* AccountView.swift */,
 				506B3B4E28A0327F002D0DEA /* HexagonView.swift */,
 				506B3B5028A04131002D0DEA /* BlobView.swift */,
@@ -155,6 +158,7 @@
 				506B3B4D289FE2C5002D0DEA /* AccountView.swift in Sources */,
 				506B3B4F28A0327F002D0DEA /* HexagonView.swift in Sources */,
 				506B3B4B289F2E7C002D0DEA /* Styles.swift in Sources */,
+				50A5963628A1A7210071E5B2 /* Tab.swift in Sources */,
 				506B3B5128A04131002D0DEA /* BlobView.swift in Sources */,
 				508E61EB289E9675001AC2EF /* ContentView.swift in Sources */,
 				508E61E9289E9675001AC2EF /* DesignCodeiOS15App.swift in Sources */,
