@@ -14,22 +14,22 @@ struct ContentView: View {
   var body: some View {
     ZStack(alignment: .bottom) {
       
-      Group {
-        switch(selectedTab) {
-          case .home:
-            // Contentview takes whole screen
-            HomeView()
-          case .explore:
-            AccountView()
-          case .notifications:
-            EmptyView()
-          case .library:
-            EmptyView()
-        }
+      switch(selectedTab) {
+        case .home:
+          // Contentview takes whole screen
+          HomeView()
+        case .explore:
+          AccountView()
+        case .notifications:
+          EmptyView()
+        case .library:
+          EmptyView()
       }
-      .frame(maxWidth: .infinity, maxHeight: .infinity) // add frame to Group
       
       TabBar()
+    }
+    .safeAreaInset(edge: .bottom) {
+      Color.clear.frame(height: 44)
     }
   }
 }
