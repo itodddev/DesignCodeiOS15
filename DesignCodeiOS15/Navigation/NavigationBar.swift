@@ -19,8 +19,9 @@ struct NavigationBar: View {
           .opacity(hasScrolled ? 1 : 0) // does not show in preview, only simulator
 
         Text(title)
-          .font(.largeTitle)
-          .fontWeight(.bold)
+//          .font(.largeTitle)
+//          .fontWeight(.bold)
+          .animatableFont(size: hasScrolled ? 22 : 34, weight: .bold)
           .frame(maxWidth: .infinity, alignment: .leading)
           .padding(.leading, 20)
           .padding(.top, 20)

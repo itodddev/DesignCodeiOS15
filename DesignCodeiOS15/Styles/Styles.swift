@@ -32,6 +32,6 @@ struct StrokeStyle: ViewModifier {
 
 extension View {
   func strokeStyle(cornerRadius: CGFloat = 30) -> some View {
-    modifier(StrokeStyle(cornerRadius: cornerRadius))
+    self.modifier(StrokeStyle(cornerRadius: cornerRadius))
   }
 }
