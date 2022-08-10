@@ -39,8 +39,8 @@ struct HomeView: View {
         Color.clear.frame(height: 70)
       })
       .overlay(
-        NavigationBar(title: "Featured")
-          .opacity(hasScrolled ? 1 : 0) // does not show in preview, only simulator
+        NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
+          
       )
     }
 }
