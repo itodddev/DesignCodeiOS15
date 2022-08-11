@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		505DBC1528A5400E00F263BB /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DBC1428A5400E00F263BB /* Course.swift */; };
 		506B3B4B289F2E7C002D0DEA /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B3B4A289F2E7C002D0DEA /* Styles.swift */; };
 		506B3B4D289FE2C5002D0DEA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B3B4C289FE2C5002D0DEA /* AccountView.swift */; };
 		506B3B4F28A0327F002D0DEA /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506B3B4E28A0327F002D0DEA /* HexagonView.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		505DBC1428A5400E00F263BB /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		506B3B4A289F2E7C002D0DEA /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		506B3B4C289FE2C5002D0DEA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		506B3B4E28A0327F002D0DEA /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				50A5963528A1A7210071E5B2 /* Tab.swift */,
 				50A5964228A3FE720071E5B2 /* PreferenceKeys.swift */,
+				505DBC1428A5400E00F263BB /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				50A5964128A319940071E5B2 /* NavigationBar.swift in Sources */,
 				506B3B5128A04131002D0DEA /* BlobView.swift in Sources */,
 				508E61EB289E9675001AC2EF /* ContentView.swift in Sources */,
+				505DBC1528A5400E00F263BB /* Course.swift in Sources */,
 				508E61E9289E9675001AC2EF /* DesignCodeiOS15App.swift in Sources */,
 				50A5963F28A2F6D70071E5B2 /* FeaturedItem.swift in Sources */,
 				50A5964328A3FE720071E5B2 /* PreferenceKeys.swift in Sources */,
