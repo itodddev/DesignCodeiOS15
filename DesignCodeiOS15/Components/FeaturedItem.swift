@@ -41,8 +41,11 @@ struct FeaturedItem: View {
         .padding(.all, 20.0)
         .padding(.vertical, 20)
         .frame(height: 350.0)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
+        //.background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
+        .background(.ultraThinMaterial)
+        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))  // clips shadow
+// has to go after 3D Rotation effect
+//        .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 0, y: 10)
         .strokeStyle()
         .padding(.horizontal, 20)
 // Moved to HomeView - background removed from card and is now on frame of FeaturedItem
@@ -50,13 +53,7 @@ struct FeaturedItem: View {
 //          Image("Blob 1")
 //            .offset(x: 250, y: -100)
 //        )
-        .overlay(
-          Image(course.image)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(height: 230)
-            .offset(x: 32, y: -80)
-      )
+        
     }
 }
 
