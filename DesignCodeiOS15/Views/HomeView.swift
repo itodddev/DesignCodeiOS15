@@ -9,6 +9,9 @@ import SwiftUI
 
 struct HomeView: View {
   
+  @Namespace var namespace // parent namespace
+  @State var show = false
+  
   @State var hasScrolled = false
   
   var body: some View {
@@ -23,8 +26,22 @@ struct HomeView: View {
         
         featured
         
-        Color.clear.frame(height: 1000) // to get scrollbars
+        Text("Courses".uppercased())
+          .font(.footnote.weight(.semibold))
+          .foregroundColor(.secondary)
+          .frame(maxWidth: .infinity, alignment: .leading)
+          .padding(.horizontal, 20)
+
+        // Color.clear.frame(height: 1000) // to get scrollbars
         
+        if !show {
+          CourseItem(namespace: namespace, show: $show)
+            .onTapGesture {
+              withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                show.toggle()
+              }
+            }
+        }
       }
       .coordinateSpace(name: "scroll")
       .safeAreaInset(edge: .top, content: {
@@ -32,8 +49,12 @@ struct HomeView: View {
       })
       .overlay(
         NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
-        
       )
+      
+      if show {
+        CourseView(namespace: namespace, show: $show)
+      }
+      
     }
   }
   
@@ -73,10 +94,10 @@ struct HomeView: View {
                 .frame(height: 230)
                 .offset(x: 32, y: -80)
                 .offset(x: minX / 2)
-              )
-            
+            )
           
-            // Text("\(proxy.frame(in: .global).minX)")
+          
+          // Text("\(proxy.frame(in: .global).minX)")
         }
       }
     }
